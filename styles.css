@@ -1,0 +1,10 @@
+header {
+    min-height: 100px;
+    padding: 28px 0px;
+}
+
+.button-container {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+}
