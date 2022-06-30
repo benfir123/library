@@ -1,29 +1,28 @@
+//Create book class
+
+class Book {
+    constructor(author, title, pages, isRead) {
+        this.author = author
+        this.title = title
+        this.pages = pages
+        this.isRead = isRead
+    }
+    toggleReadStatus() {
+        if (this.isRead) {
+            this.isRead = false;
+        } else {
+            this.isRead = true;
+        }
+        displayLibrary();
+    }
+ }
+
 //Create array for all the book objects and populate it with the initial book
 
 let myLibrary = [];
 const book = new Book('Chris Voss', 'Never Split the Difference', 274, true)
 myLibrary.push(book)
 displayLibrary();
-
-//Create book constructor function
-
-function Book(author, title, pages, isRead) {
-    this.author = author
-    this.title = title
-    this.pages = pages
-    this.isRead = isRead
-}
-
-//Add a function to the prototype to toggle read status as instructed
-
-Book.prototype.toggleReadStatus = function () {
-    if (this.isRead) {
-        this.isRead = false;
-    } else {
-        this.isRead = true;
-    }
-    displayLibrary();
-}
 
 //Function to take user input and add it as a book object to our main array
 
